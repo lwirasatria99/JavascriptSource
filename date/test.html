@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Javascript</title>
+    <script src="date.format.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    
+    function currentDate() {
+//        var dateFormat = require('dateformat');
+        var now = new Date();
+        var datenow = now.format(dateFormat.masks.isoDate)
+
+        return datenow;
+    }
+    
+
+</script>
+
+<h2> Current Date </h2>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = currentDate();"> Date Now</button>
+
+<p id="demo"> 00.00.00 </p>
+
+</body>
+</html>
